@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type = "text/css" href="css/">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script >
+        let take = (id)=>{
+    switch(id) {
+        case "proj1":
+            window.open("https://www.google.com","_self")
+            break
+        case "proj2":
+            window.open("https://www.github.com","_self")
+            break
+        case "proj3":
+            window.open("https://www.instagram.com","_self")
+            break
+        case "proj4":
+            window.open("https://www.facebook.com","_self")
+            break
+    }
+}
+let sub = ()=>{
+    alert("Message Sent")
+}
+let br= (web)=>{
+    switch(web) {
+        case "box":
+            window.open("https://github.com/ResponseTime","_self")
+            break
+            case "box1":
+            window.open("https://www.linkedin.com/in/aayush-bhattacharjee/","_self")
+            break
+    }
+}
+
+    </script>
+    <style>@import url('https://fonts.googleapis.com/css2?family=BhuTuka+Expanded+One&family=Rubik+Glitch&family=Saira:wght@200&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Teko&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+        body{
+            background-image: linear-gradient(to right bottom, #a6a38e, #afa983, #b7af78, #c0b56c, #c9bb5f);
+        }
+        img{
+            height: 400px;
+            position: relative;
+            perspective: 500px;
+            filter: drop-shadow(10px 10px 10px beige)
+        }
+        .fl{
+            display: flex;
+            justify-content:center;
+            align-items: center;
+        }
+        .fl >p{
+            position:absolute;
+            left: 50%;
+            cursor: pointer;
+            text-align: center;
+            font-size: 6.5rem;
+            font-family: 'BhuTuka Expanded One', cursive;
+        }
+        #box{
+            position: fixed;
+            top: 50%;
+            width:60px;
+            height: 60px;
+            text-align: center;
+            font-size: 1em;
+            line-height:70px;
+            font-weight: bolder;
+            background-color: #333;
+            cursor: pointer;
+        }
+        #box1{
+            position: fixed;
+            top: 56%;
+            width:60px;
+            height: 60px;
+            text-align: center;
+            font-size: 1em;
+            line-height:70px;
+            font-weight: bolder;
+            background-color: #0A66C2;
+            cursor: pointer;
+        }
+        img:nth-child(1){
+            left:-65px;
+            transform:  rotate3d(260,181, -60, 65deg);
+        }
+        img:nth-child(2){
+            right: 256px;
+            transform:rotate3d(260,181, -60, 65deg);
+        }
+        img:nth-child(3){
+            right:451px;
+            transform: rotate3d(260,181, -60, 65deg);
+        }
+        img:nth-child(4){
+            right: 651px;
+            transform: rotate3d(260,181, -60, 65deg);
+        }
+        
+        .fl:hover img{
+            transform: rotate3d(0,0,0,0deg);
+            transition: 0.8s ease-in-out;
+        }
+        
+        .fl > img:nth-child(1):hover{
+        
+            transition: 0.5s ease-out;
+            transform: rotate3d(21,60,-20,25deg);
+        }
+        .fl > img:nth-child(2):hover{
+        
+            transition: 0.5s ease-out;
+            transform: rotate3d(21,60,-20,25deg);
+        }
+        .fl > img:nth-child(3):hover{
+        
+            transition: 0.5s ease-out;
+            transform: rotate3d(21,60,-20,25deg);
+        }
+        .fl > img:nth-child(4):hover{
+            transition: 0.5s ease-out;
+            transform: rotate3d(21,60,-20,25deg);
+        }
+        nav{
+            display: flex;
+
+            justify-content: flex-end;
+            background-color: rgb(226, 206, 179);
+        }
+        nav ul{
+            display: flex;
+        }
+        nav ul li{
+            list-style-type: none;
+            padding: 20px 20px;
+        }
+        nav  ul li a{
+            font-family: 'Yantramanav', sans-serif;
+            font-weight: bolder;
+            color:rgb(43, 15, 15);
+            text-decoration: none;
+        }
+        .container{
+            width: 100%;
+            height: 500px;
+            display: flex;
+            justify-content:center;
+        }
+        #int{
+           position: absolute;
+           top: 10%;
+           left: 20%;
+           font-size: 5.8rem;
+           font-weight: bolder;
+           font-family: 'Kanit', sans-serif;
+        }
+        #ab{
+            width: 50%;
+            position: absolute;
+            top: 25%;
+            left: 25%;
+            font-size: 2.4rem;
+            font-family: 'Bebas Neue', cursive;
+        }
+        #Education{
+            width: 100%;
+            height: 250px;
+            padding: 50px 50px;
+            
+        }
+        #year{
+            position: absolute;
+            left: 20%;
+            font-family: 'Teko', sans-serif;
+            font-size: 1.2em;
+        }
+        #deg{
+            position: absolute;
+            top: 64%;
+            left: 20%;
+            font-size: 1.5em;
+            font-family: 'Teko', sans-serif;
+        }
+        #colg{
+            position: absolute;
+            font-size: 1.2em;
+            top: 68%;
+            left: 14.6%;
+            font-family: 'Teko';
+        }
+        #course{
+            position: absolute;
+            font-size: 1.2em;
+            top: 74%;
+            left: 17%;
+            font-family: 'Teko', sans-serif;
+        }
+        #Contact{
+            width: 100%;
+            height: 500px;
+            background-image: linear-gradient(to right top, #43728b, #3c7bac, #5180cb, #7e80e3, #b679ee);
+        }
+        #na{
+            top: 140%;
+            position: absolute;
+            left: 25%;
+            padding: 10px 10px;
+            width:50%;
+            text-align: center;
+        }
+        #ea{
+            position: absolute;
+            text-align: center;
+            top: 145%;
+            padding: 10px 10px;
+            width:50%;
+            left: 25%;
+        }
+        #mess{
+            text-align: center;
+            position:absolute;
+            padding: 10px 10px;
+            width:50%;
+            top: 150%;
+            left: 25%;
+        }
+        #sn{
+            text-align: center;
+            position:absolute;
+            padding: 10px 10px;
+            width:50%;
+            top: 170%;
+            left: 25%;
+        }
+        #con{
+            position:absolute;
+            font-size:6.5em;   
+            left: 10%; 
+        }
+        </style>
+    <title>Full Web</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#Education">Education</a></li>
+            <li><a href="#projs">My Projects</a></li>
+            <li><a href="#Contact">Contact Me</a></li>
+        </ul>
+    </nav>
+
+        <div id="box" onclick="br(id)">
+            <span>
+                <i class="fa fa-github" style="font-size:36px"></i>
+            </span>
+        </div>
+        <div id="box1"onclick="br(id)">
+            <span>
+                <i class="fa fa-linkedin-square" style="font-size:24px"></i>
+            </span>
+        </div>
+    <div class="container" id ="about">
+        <span id = "int">Welcome</span>
+        <p id="ab"> I am Aayush Bhattacharjee, completing my Bachelor's in Computer Applications degree. I am experienced in handling Agile and Scrum environments. Supports Team administrative, project coordination, design and programming needs. Fluent in English/Hindi. School projects included building apps, optimizing programs and validating code.</p>
+    </div>
+    <div id="Education">
+        <span id = "year">
+            MAY 2024
+        </span>
+        <span id = "deg">
+            BACHELOR’S IN COMPUTER APPLICATIONS (HONS) (SPECIALIZATION IN AI/ML), 
+        </span>
+        <span id="colg">
+            <pre>
+            GURU GOBIND SINGH INDRAPRASTHA UNIVERSITY
+            INSTITUTE OF INNOVATION IN TECHNOLOGY AND MANAGEMENT
+        </pre>
+        </span>
+        <span id="course">
+            <pre>
+            • Courses: Data Structures and Algorithms, Introduction to Computer Systems,    
+               Fundamentals of Computer Science, Web Technologies, Design And Analysis of 
+               Algorithms
+            </pre>
+        </span>
+    </div>
+    <div class="fl" id = "projs">
+        <img src="/smooth-nature-pic-full-hd-126695318.jpg" id = "proj1" onclick="take(id)" alt="wda">
+       <img src="/smooth-nature-pic-full-hd-126695318.jpg" id = "proj2" onclick="take(id)" alt="gfd">
+       <img src="/smooth-nature-pic-full-hd-126695318.jpg" id = "proj3" onclick="take(id)"  alt="fdg">
+       <img src="/smooth-nature-pic-full-hd-126695318.jpg" id = "proj4" onclick="take(id)" alt="fdg">
+       <p>My projects</p>
+    </div>
+    <div id="Contact">
+        <span id="con">Contact Me</span>
+        <form action="/submit" method="post">
+            <input type="text" name="name" id="na" placeholder="Your name">
+            <input type="email" name="email" id="ea" placeholder="Email address">
+            <textarea name="message" id="mess" cols="30" rows="10" placeholder="Enter Message"></textarea>
+            <input type="submit" id = "sn" value="Send Message" onclick="sub()"/>
+        </form>
+    </div>
+</body>
+</html>
