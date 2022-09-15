@@ -1,7 +1,7 @@
 const express = require('express');
 const exp = express();
 const mail = require('nodemailer')
-
+const port = process.env.PORT || 5000
 
 let k = 0
 exp.use(express.static(__dirname + '/public'));
@@ -42,6 +42,6 @@ exp.post('/submit', (req, res) => {
     }, 1000);
         
   })
-exp.listen(3000,()=>{
+exp.listen(port,()=>{
 console.log('server started')
 })
