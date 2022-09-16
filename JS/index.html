@@ -23,6 +23,22 @@
             break
     }
 }
+let hov = ()=>{
+    let hove= document.getElementById('ab')
+    let kj = document.getElementById('int')
+    let div = document.getElementById('pro')
+    div.style.display = 'block'
+    hove.style.left= "10%"
+    kj.style.left= "10%"
+    hove.style.transition= "0.8s ease-out"
+    kj.style.transition= "0.8s ease-out"
+    hove.style.transform = "rotate3d(90,80,-10,45deg)"
+    kj.style.transform = "rotate3d(90,80,-10,45deg)"
+}
+let ho = ()=>{
+    let kj = document.getElementById('int')
+
+}
 let sub = ()=>{
     alert("Message Sent")
 }
@@ -38,7 +54,8 @@ let br= (web)=>{
 }
 
     </script>
-    <style>@import url('https://fonts.googleapis.com/css2?family=BhuTuka+Expanded+One&family=Rubik+Glitch&family=Saira:wght@200&display=swap');
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=BhuTuka+Expanded+One&family=Rubik+Glitch&family=Saira:wght@200&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Teko&display=swap');
@@ -61,6 +78,9 @@ let br= (web)=>{
             display: flex;
             justify-content:center;
             align-items: center;
+        }
+        #about>p{
+            cursor: pointer;
         }
         .fl >p{
             position:absolute;
@@ -162,6 +182,7 @@ let br= (web)=>{
         }
         #int{
            position: absolute;
+           cursor: pointer;
            top: 10%;
            left: 20%;
            font-size: 5.8rem;
@@ -175,6 +196,7 @@ let br= (web)=>{
             left: 25%;
             font-size: 2.4rem;
             font-family: 'Bebas Neue', cursive;
+            transform: rotate3d(0,0,0,0deg);
         }
         #Education{
             width: 100%;
@@ -251,6 +273,18 @@ let br= (web)=>{
             font-size:6.5em;   
             left: 10%; 
         }
+        #pro{
+            display: none;
+            margin: 40px 10px;
+        }
+        #pro>img{
+            position:absolute;
+            left: 66%;
+            width:400px;
+            height: 400px;
+            transform: rotate3d(0,0,0,0deg);
+            filter: drop-shadow(0px 0px 0px beige)
+        }
         </style>
     <title>Portfolio</title>
 </head>
@@ -275,8 +309,11 @@ let br= (web)=>{
             </span>
         </div>
     <div class="container" id ="about">
+        <span id ="pro">
+        <img src="/smooth-nature-pic-full-hd-126695318.jpg">
+    </span>
         <span id = "int">Welcome</span>
-        <p id="ab"> I am Aayush Bhattacharjee, completing my Bachelor's in Computer Applications degree. I am experienced in handling Agile and Scrum environments. Supports Team administrative, project coordination, design and programming needs. Fluent in English/Hindi. School projects included building apps, optimizing programs and validating code.</p>
+        <p id="ab" onmouseenter="hov()"> I am Aayush Bhattacharjee, completing my Bachelor's in Computer Applications degree. I am experienced in handling Agile and Scrum environments. Supports Team administrative, project coordination, design and programming needs. Fluent in English/Hindi. School projects included building apps, optimizing programs and validating code.</p>
     </div>
     <div id="Education">
         <span id = "year">
