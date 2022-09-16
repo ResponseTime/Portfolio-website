@@ -28,6 +28,8 @@ let hov = ()=>{
     let kj = document.getElementById('int')
     let div = document.getElementById('pro')
     div.style.display = 'block'
+    div.style.transition = '0.7s ease-in-out'
+    div.style.left = '40%'
     hove.style.left= "10%"
     kj.style.left= "10%"
     hove.style.transition= "0.8s ease-out"
@@ -276,10 +278,12 @@ let br= (web)=>{
         #pro{
             display: none;
             margin: 40px 10px;
+            position: absolute;
+            right: 10%;
         }
         #pro>img{
             position:absolute;
-            left: 66%;
+            left: 60%;
             width:400px;
             height: 400px;
             transform: rotate3d(0,0,0,0deg);
@@ -309,9 +313,9 @@ let br= (web)=>{
             </span>
         </div>
     <div class="container" id ="about">
-        <span id ="pro">
+        <div id ="pro">
         <img src="/smooth-nature-pic-full-hd-126695318.jpg">
-    </span>
+    </div>
         <span id = "int">Welcome</span>
         <p id="ab" onmouseenter="hov()"> I am Aayush Bhattacharjee, completing my Bachelor's in Computer Applications degree. I am experienced in handling Agile and Scrum environments. Supports Team administrative, project coordination, design and programming needs. Fluent in English/Hindi. School projects included building apps, optimizing programs and validating code.</p>
     </div>
