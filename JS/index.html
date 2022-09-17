@@ -23,24 +23,40 @@
             break
     }
 }
-let hov = ()=>{
+setTimeout(() => {
     let hove= document.getElementById('ab')
     let kj = document.getElementById('int')
     let div = document.getElementById('pro')
     div.style.display = 'block'
-    div.style.transition = '0.7s ease-in-out'
+    div.style.transition = '0.9s ease-in-out'
     div.style.left = '40%'
     hove.style.left= "10%"
     kj.style.left= "10%"
-    hove.style.transition= "0.8s ease-out"
-    kj.style.transition= "0.8s ease-out"
+    hove.style.transition= "0.9s ease-out"
+    kj.style.transition= "0.9s ease-out"
     hove.style.transform = "rotate3d(90,80,-10,45deg)"
     kj.style.transform = "rotate3d(90,80,-10,45deg)"
-}
-let ho = ()=>{
-    let kj = document.getElementById('int')
+}, 1050);
+// let hov = ()=>{
+//     let hove= document.getElementById('ab')
+//     let kj = document.getElementById('int')
+//     let div = document.getElementById('pro')
+//     div.style.display = 'block'
+//     div.style.transition = '0.7s ease-in-out'
+//     div.style.left = '40%'
+//     hove.style.left= "10%"
+//     kj.style.left= "10%"
+//     hove.style.transition= "0.8s ease-out"
+//     kj.style.transition= "0.8s ease-out"
+//     hove.style.transform = "rotate3d(90,80,-10,45deg)"
+//     kj.style.transform = "rotate3d(90,80,-10,45deg)"
+// }
 
-}
+setTimeout(() => {
+    let di = document.getElementById('nav')
+    di.style.transform = "rotate3d(-100,10,0,360deg)"
+    di.style.transition = "0.5s ease-in"
+}, 100);
 let sub = ()=>{
     alert("Message Sent")
 }
@@ -68,13 +84,14 @@ let br= (web)=>{
             scroll-behavior: smooth;
         }
         body{
-            background-image: linear-gradient(to right bottom, #a6a38e, #afa983, #b7af78, #c0b56c, #c9bb5f);
+            background-image: linear-gradient(to left bottom, #414748, #445a5e, #466c77, #468091, #4593ae);
         }
         img{
             height: 400px;
             position: relative;
             perspective: 500px;
-            filter: drop-shadow(10px 10px 10px beige)
+            filter: drop-shadow(-5px 20px 6px rgb(101, 156, 207));
+            cursor: pointer;
         }
         .fl{
             display: flex;
@@ -88,9 +105,10 @@ let br= (web)=>{
             position:absolute;
             left: 50%;
             cursor: pointer;
+            color: rgb(3, 10, 24);
             text-align: center;
             font-size: 6.5rem;
-            font-family: 'BhuTuka Expanded One', cursive;
+            font-family: 'Bebas Neue', cursive;
         }
         #box{
             position: fixed;
@@ -159,9 +177,9 @@ let br= (web)=>{
         }
         nav{
             display: flex;
-
             justify-content: flex-end;
-            background-color: rgb(226, 206, 179);
+            background-color: transparent;
+            transform: rotate3d(-120,10,0,-180deg);
         }
         nav ul{
             display: flex;
@@ -173,7 +191,8 @@ let br= (web)=>{
         nav  ul li a{
             font-family: 'Yantramanav', sans-serif;
             font-weight: bolder;
-            color:rgb(43, 15, 15);
+            color:rgb(255, 255, 255);
+            font-size: 1.2rem;
             text-decoration: none;
         }
         .container{
@@ -187,6 +206,7 @@ let br= (web)=>{
            cursor: pointer;
            top: 10%;
            left: 20%;
+           color: rgb(3, 10, 24);
            font-size: 5.8rem;
            font-weight: bolder;
            font-family: 'Kanit', sans-serif;
@@ -196,41 +216,54 @@ let br= (web)=>{
             position: absolute;
             top: 25%;
             left: 25%;
+            color: #0d2438;
             font-size: 2.4rem;
             font-family: 'Bebas Neue', cursive;
             transform: rotate3d(0,0,0,0deg);
         }
         #Education{
-            width: 100%;
+            width: 50%;
             height: 250px;
             padding: 50px 50px;
             
         }
         #year{
             position: absolute;
-            left: 20%;
+            left: 51%;
+            color:#0d2438;
             font-family: 'Teko', sans-serif;
             font-size: 1.2em;
         }
         #deg{
             position: absolute;
-            top: 64%;
-            left: 20%;
+            color:#0d2438;
+            top: 65%;
+            left: 51%;
             font-size: 1.5em;
             font-family: 'Teko', sans-serif;
         }
         #colg{
             position: absolute;
+            color:#0d2438;
             font-size: 1.2em;
-            top: 68%;
-            left: 14.6%;
+            top: 69%;
+            left: 45.6%;
             font-family: 'Teko';
+        }
+        #hed{
+            position: absolute;
+            font-size: 6.5rem;
+            top: 65%;
+            left: 20%;
+            font-family: 'Bebas Neue', cursive;
+            color: rgb(3, 10, 24);
         }
         #course{
             position: absolute;
             font-size: 1.2em;
+            color:#0d2438;
             top: 74%;
-            left: 17%;
+            left: 48%;
             font-family: 'Teko', sans-serif;
         }
         #Contact{
@@ -273,6 +306,8 @@ let br= (web)=>{
         #con{
             position:absolute;
             font-size:6.5em;   
+            font-family: 'Bebas Neue', cursive;
+            color: rgb(3, 10, 24);
             left: 10%; 
         }
         #pro{
@@ -294,7 +329,7 @@ let br= (web)=>{
     <title>Portfolio</title>
 </head>
 <body>
-    <nav>
+    <nav id="nav">
         <ul>
             <li><a href="#about">About Me</a></li>
             <li><a href="#Education">Education</a></li>
@@ -318,9 +353,12 @@ let br= (web)=>{
         <img src="/smooth-nature-pic-full-hd-126695318.jpg">
     </div>
         <span id = "int">Welcome</span>
-        <p id="ab" onmouseenter="hov()"> I am Aayush Bhattacharjee, completing my Bachelor's in Computer Applications degree. I am experienced in handling Agile and Scrum environments. Supports Team administrative, project coordination, design and programming needs. Fluent in English/Hindi. School projects included building apps, optimizing programs and validating code.</p>
+        <p id="ab"> I am Aayush Bhattacharjee, completing my Bachelor's in Computer Applications degree. I am experienced in handling Agile and Scrum environments. Supports Team administrative, project coordination, design and programming needs. Fluent in English/Hindi. School projects included building apps, optimizing programs and validating code.</p>
     </div>
     <div id="Education">
+        <span id ="hed">
+            My Education
+        </span>
         <span id = "year">
             MAY 2024
         </span>
