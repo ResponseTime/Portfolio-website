@@ -36,9 +36,8 @@ exp.post('/submit', (req, res) => {
           console.log('Email sent: ' + info.response);
         }
       })
-    setTimeout(() => {
-        res.sendFile(__dirname+'/index.html')
-    }, 1000);
+      res.redirect('/')
+
         
   })
 exp.listen(port,()=>{

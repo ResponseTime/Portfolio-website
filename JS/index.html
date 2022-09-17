@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type = "text/css" href="css/">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
     <script >
         let take = (id)=>{
     switch(id) {
@@ -72,6 +72,7 @@ let br= (web)=>{
 }
 
     </script>
+   
     <style>
     @import url('https://fonts.googleapis.com/css2?family=BhuTuka+Expanded+One&family=Rubik+Glitch&family=Saira:wght@200&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
@@ -97,6 +98,7 @@ let br= (web)=>{
             display: flex;
             justify-content:center;
             align-items: center;
+            height: 500px;
         }
         #about>p{
             cursor: pointer;
@@ -272,7 +274,7 @@ let br= (web)=>{
             background-image: linear-gradient(to right top, #43728b, #3c7bac, #5180cb, #7e80e3, #b679ee);
         }
         #na{
-            top: 140%;
+            top: 188%;
             position: absolute;
             left: 25%;
             padding: 10px 10px;
@@ -282,7 +284,7 @@ let br= (web)=>{
         #ea{
             position: absolute;
             text-align: center;
-            top: 145%;
+            top: 193%;
             padding: 10px 10px;
             width:50%;
             left: 25%;
@@ -292,7 +294,7 @@ let br= (web)=>{
             position:absolute;
             padding: 10px 10px;
             width:50%;
-            top: 150%;
+            top: 198%;
             left: 25%;
         }
         #sn{
@@ -300,7 +302,7 @@ let br= (web)=>{
             position:absolute;
             padding: 10px 10px;
             width:50%;
-            top: 170%;
+            top: 220%;
             left: 25%;
         }
         #con{
@@ -325,6 +327,27 @@ let br= (web)=>{
             transform: rotate3d(0,0,0,0deg);
             filter: drop-shadow(0px 0px 0px beige)
         }
+        #skills{
+            width: 100%;
+            height: 400px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            background-color: chocolate;
+        }
+        #pi{
+            height: 200px;
+        }
+        #pi >i{
+            margin: 40px 20px;
+            cursor: pointer;            
+            font-size: 2.5rem;
+        }
+        #skills > p{
+            font-size:3.5em;   
+            font-family: 'Bebas Neue', cursive;
+            color: rgb(3, 10, 24);
+        }
         </style>
     <title>Portfolio</title>
 </head>
@@ -333,6 +356,7 @@ let br= (web)=>{
         <ul>
             <li><a href="#about">About Me</a></li>
             <li><a href="#Education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
             <li><a href="#projs">My Projects</a></li>
             <li><a href="#Contact">Contact Me</a></li>
         </ul>
@@ -340,12 +364,12 @@ let br= (web)=>{
 
         <div id="box" onclick="br(id)">
             <span>
-                <i class="fa fa-github" style="font-size:36px"></i>
+                <i class='fab fa-github' style='font-size:36px'></i>
             </span>
         </div>
         <div id="box1"onclick="br(id)">
             <span>
-                <i class="fa fa-linkedin-square" style="font-size:24px"></i>
+                <i class='fab fa-linkedin' style='font-size:36px'></i>
             </span>
         </div>
     <div class="container" id ="about">
@@ -378,6 +402,22 @@ let br= (web)=>{
                Algorithms
             </pre>
         </span>
+    </div>
+    <div id="skills">
+        <div id="pi">
+            <i class='fab fa-python' ></i>
+            <i class='fab fa-php' ></i>
+            <i class='fab fa-node' ></i>
+            <i class='fab fa-js-square''></i>
+            <i class="devicon-c-plain-wordmark" ></i>
+            <br>
+            <i class="devicon-cplusplus-plain"></i>
+            <i class="devicon-java-plain-wordmark"></i>
+            <i class="devicon-mysql-plain-wordmark"></i>
+            <i class="devicon-html5-plain-wordmark"></i>
+            <i class="devicon-css3-plain-wordmark"></i>
+        </div>
+        <p>Programming Languages <br> & Technologies</p>
     </div>
     <div class="fl" id = "projs">
         <img src="/smooth-nature-pic-full-hd-126695318.jpg" id = "proj1" onclick="take(id)" alt="wda">
