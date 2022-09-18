@@ -37,8 +37,6 @@ exp.post('/submit', (req, res) => {
         }
       })
       res.redirect('/')
-
-        
   })
 exp.listen(port,()=>{
 console.log('server started')
