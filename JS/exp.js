@@ -3,7 +3,7 @@ const exp = express();
 const mail = require('nodemailer')
 const port = process.env.PORT || 5000
 
-exp.use(express.static(__dirname + '/public'));
+exp.use(express.static('public'))
 exp.use(express.urlencoded({
     extended: true
   }))
